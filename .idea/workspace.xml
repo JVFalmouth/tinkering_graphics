@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28d05873-7eb8-47d9-85be-94dac704a12c" name="Default Changelist" comment="" />
+    <list default="true" id="28d05873-7eb8-47d9-85be-94dac704a12c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Tinkering Graphics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Tinkering Graphics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sans.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sans.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/colours.py" beforeDir="false" afterPath="$PROJECT_DIR$/colours.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reskin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reskin.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +21,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SWZTUqeBzn8HA2PbtL7GFXE8WF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -145,5 +155,16 @@
       <updated>1571153081912</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
