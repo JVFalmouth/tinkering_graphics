@@ -87,4 +87,5 @@ def tool(image: str):
                 sys.exit()
 
 
-tool("assets/sans.png")  # Pre-made simple sprite, included in the /assets folder. Simply for testing purposes.
+if __name__ ==  "__main__":
+    tool(input("File path: "))
