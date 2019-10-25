@@ -26,7 +26,8 @@ def find_colours(image: pygame.Surface) -> list:
     return list_of_colours
 
 
-def change_colours(image: pygame.Surface, colour_to_change: pygame.Color, target_colour: pygame.Color) -> pygame.Surface:
+def change_colours(image: pygame.Surface, colour_to_change: pygame.Color,
+                   target_colour: pygame.Color, new_file_name: str) -> pygame.Surface:
     """Function will convert a colour in an image into a different colour.
     It will save the edited image to file as "reskin.png" in the asset folder, and return the image."""
     for x in range(image.get_size()[0]):
@@ -36,8 +37,33 @@ def change_colours(image: pygame.Surface, colour_to_change: pygame.Color, target
             if pixel_col == colour_to_change:
                 pixel_col = target_colour
             image.set_at(pos, pixel_col)
-    pygame.image.save(image, "assets/reskin.png")
+    pygame.image.save(image, f"assets/{new_file_name}.png")
     return image
+
+
+def cmd_line_options(image: pygame.Surface, window) -> pygame.Surface:
+    colour_list = find_colours(image)
+    for item in colour_list: print(item, end=", ")
+    print("")
+    colour_to_replace = colour_list[int(input("Select one of the colours to replace: ")) - 1]
+
+    colour_options = {"Blue": colours.blue,
+                      "Grey": colours.grey,
+                      "Green": colours.green,
+                      "Yellow": colours.yellow,
+                      "Red": colours.red}
+
+    for item in colour_options:
+        print(item, end=" ")
+    print("")
+    colour_choice = ""
+    while colour_choice not in colour_options:
+        colour_choice = input("What colour would you like to replace it with?: ")
+    image = change_colours(image, colour_to_replace, colour_options[colour_choice], colour_choice)
+    window.blit(pygame.transform.scale(image, (300, 300)), (300, 0))  # Draw reskinned image to screen.
+    pygame.display.flip()
+    return image
+
 
 def tool(image: str):
     """This procedure is a tool for the re-skinning of simple images.
@@ -53,19 +79,7 @@ def tool(image: str):
     window.blit(pygame.transform.scale(image, (300, 300)), (0, 0))  # Draw start image to screen.
     pygame.display.flip()
 
-    colour_list = find_colours(image)
-    for item in colour_list: print(item, end=", ")
-    print("")
-    colour_to_replace = colour_list[int(input("Select one of the colours to replace: "))-1]
-
-    colour_options = [colours.blue, colours.grey, colours.green, colours.yellow, colours.red]
-    for item in colour_options: print(item, end=", ")
-    print("")
-    colour_to_use = colour_options[int(input("What colour would you like to replace it with?: "))-1]
-    image = change_colours(image, colour_to_replace, colour_to_use)
-
-    window.blit(pygame.transform.scale(image, (300, 300)), (300, 0))  # Draw reskinned image to screen.
-    pygame.display.flip()
+    image = cmd_line_options(image, window)
 
     while True:
         for event in pygame.event.get():
