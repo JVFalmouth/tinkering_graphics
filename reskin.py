@@ -1,3 +1,8 @@
+"""DOCSTRING
+Author: James Vanstone
+Github: JVFalmouth
+Repo: github.com/JVFalmouth/tinkering_graphics"""
+
 """Contract #4 - Platformer Entity Reskinning
 To enable better re-use of assets, a tool which reskins in-game items and
 monsters devised by the dugeon entity. You will have to remove a colour
@@ -15,6 +20,7 @@ import colours
 def find_colours(image: pygame.Surface) -> list:
     """This function is used to find all of the different colours in an image.
     It will output a list of colours."""
+
     list_of_colours = []
     for x in range(image.get_size()[0]):
         for y in range(image.get_size()[1]):
@@ -29,7 +35,8 @@ def find_colours(image: pygame.Surface) -> list:
 def change_colours(image: pygame.Surface, colour_to_change: pygame.Color,
                    target_colour: pygame.Color, new_file_name: str) -> pygame.Surface:
     """Function will convert a colour in an image into a different colour.
-    It will save the edited image to file as "reskin.png" in the asset folder, and return the image."""
+    It will save the edited image to file in the asset folder, and return the image."""
+
     for x in range(image.get_size()[0]):
         for y in range(image.get_size()[1]):
             pos = (x, y)
@@ -61,7 +68,7 @@ def cmd_line_options(image: pygame.Surface, window) -> pygame.Surface:
     while colour_choice not in colour_options:
         colour_choice = input("What colour would you like to replace it with?: ")
     image = change_colours(image, colour_to_replace, colour_options[colour_choice], colour_choice)
-    window.blit(pygame.transform.scale(image, (300, 300)), (300, 0))  # Draw reskinned image to screen.
+    window.blit(pygame.transform.scale(image, (300, 300)), (300, 0))  # Draw re-skinned image to screen.
     pygame.display.flip()
     return image
 
@@ -89,4 +96,8 @@ def tool(image: str):
 
 
 if __name__ == "__main__":
-    tool(input("File path: "))
+    while True:
+        try:
+            tool(input("File path: "))
+        except pygame.error:
+            print("That's not a valid file.")
