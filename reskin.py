@@ -37,13 +37,14 @@ def change_colours(image: pygame.Surface, colour_to_change: pygame.Color,
             if pixel_col == colour_to_change:
                 pixel_col = target_colour
             image.set_at(pos, pixel_col)
-    pygame.image.save(image, f"assets/{new_file_name}.png")
+    pygame.image.save(image, f"assets/{new_file_name}_re-skin.png")
     return image
 
 
 def cmd_line_options(image: pygame.Surface, window) -> pygame.Surface:
     colour_list = find_colours(image)
-    for item in colour_list: print(item, end=", ")
+    for item in colour_list:
+        print(item, end=", ")
     print("")
     colour_to_replace = colour_list[int(input("Select one of the colours to replace: ")) - 1]
 
@@ -79,7 +80,7 @@ def tool(image: str):
     window.blit(pygame.transform.scale(image, (300, 300)), (0, 0))  # Draw start image to screen.
     pygame.display.flip()
 
-    image = cmd_line_options(image, window)
+    cmd_line_options(image, window)
 
     while True:
         for event in pygame.event.get():
@@ -87,5 +88,5 @@ def tool(image: str):
                 sys.exit()
 
 
-if __name__ ==  "__main__":
+if __name__ == "__main__":
     tool(input("File path: "))

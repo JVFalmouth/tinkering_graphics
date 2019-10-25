@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28d05873-7eb8-47d9-85be-94dac704a12c" name="Default Changelist" comment="">
+    <list default="true" id="28d05873-7eb8-47d9-85be-94dac704a12c" name="Default Changelist" comment="Added a check so this can be called as a lib.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/reskin.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/reskin.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reskin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reskin.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -201,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572003132309</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated tool to take input of desired colour, in a better manner.">
+      <created>1572008250342</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572008250342</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added a check so this can be called as a lib.">
+      <created>1572008398369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572008398369</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +237,9 @@
     <MESSAGE value="Add thorpy to the environment for the creation of UI elements in the tool." />
     <MESSAGE value="Removed thorpy." />
     <MESSAGE value="Updated tool to take input of desired colour." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated tool to take input of desired colour." />
+    <MESSAGE value="Updated tool to take input of desired colour, in a better manner." />
+    <MESSAGE value="Added a check so this can be called as a lib." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a check so this can be called as a lib." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tinkering_graphics$reskin.coverage" NAME="reskin Coverage Results" MODIFIED="1571736114678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
