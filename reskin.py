@@ -10,6 +10,7 @@ Each unit of these teams will have to be saved in a new png file."""
 import pygame
 import sys
 import colours
+import thorpy
 
 
 def find_colours(image: pygame.Surface) -> list:
