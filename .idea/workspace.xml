@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28d05873-7eb8-47d9-85be-94dac704a12c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/reskin.py" beforeDir="false" afterPath="$PROJECT_DIR$/reskin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572011182557</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated file format to fix the authorship and other file information.">
+      <created>1572011854186</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572011854186</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +269,8 @@
     <MESSAGE value="Fixed pep8 violations." />
     <MESSAGE value="Edited Docstring." />
     <MESSAGE value="Removed some assets." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed some assets." />
+    <MESSAGE value="Updated file format to fix the authorship and other file information." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated file format to fix the authorship and other file information." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tinkering_graphics$reskin.coverage" NAME="reskin Coverage Results" MODIFIED="1571736114678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
