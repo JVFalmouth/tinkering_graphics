@@ -54,9 +54,15 @@ def tool(image: str):
     pygame.display.flip()
 
     colour_list = find_colours(image)
-    print(colour_list)
+    for item in colour_list: print(item, end=", ")
+    print("")
     colour_to_replace = colour_list[int(input("Select one of the colours to replace: "))-1]
-    image = change_colours(image, colour_to_replace, colours.yellow)  # currently just using yellow for development.
+
+    colour_options = [colours.blue, colours.grey, colours.green, colours.yellow, colours.red]
+    for item in colour_options: print(item, end=", ")
+    print("")
+    colour_to_use = colour_options[int(input("What colour would you like to replace it with?: "))-1]
+    image = change_colours(image, colour_to_replace, colour_to_use)
 
     window.blit(pygame.transform.scale(image, (300, 300)), (300, 0))  # Draw reskinned image to screen.
     pygame.display.flip()
