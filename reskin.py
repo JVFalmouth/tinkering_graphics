@@ -1,8 +1,3 @@
-"""DOCSTRING
-Author: James Vanstone
-Github: JVFalmouth
-Repo: github.com/JVFalmouth/tinkering_graphics"""
-
 """Contract #4 - Platformer Entity Reskinning
 To enable better re-use of assets, a tool which reskins in-game items and
 monsters devised by the dugeon entity. You will have to remove a colour
@@ -15,6 +10,12 @@ Each unit of these teams will have to be saved in a new png file."""
 import pygame
 import sys
 import colours
+
+
+__author__ = "James Vanstone"
+__licence__ = "MIT"
+__version__ = 1.0
+__url__ = "github.com/JVFalmouth/tinkering_graphics"
 
 
 def find_colours(image: pygame.Surface) -> list:
